@@ -1,25 +1,29 @@
-
 ---
 
 # REMWaste Frontend Challenge – Skip Selection Page Redesign
 
 ## Overview
 
-This project is a submission for the REMWaste front-end React coding challenge. The objective was to **redesign the "Skip Selection" page** on the REMWaste platform while preserving its functionality, improving the UI/UX, and ensuring responsiveness across devices.
+This project is a submission for the REMWaste front-end React coding challenge. The goal was to **redesign the "Skip Selection" page** of the REMWaste platform while keeping its core functionality intact, improving the UI/UX, and making it responsive across devices.
 
-**Live preview:** [Deployed Link Goes Here]  
-**GitHub Repo:** [GitHub Repo Link Goes Here]
+**Live Preview:** [wewantwaste-test.vercel.app](https://wewantwaste-test.vercel.app)  
+**StackBlitz Sandbox:** [Open in StackBlitz](https://stackblitz.com/~/github.com/Obiorachibuike/wewantwaste_test?file=src/App.tsx)  
+**GitHub Repo:** [https://github.com/Obiorachibuike/wewantwaste_test](https://github.com/Obiorachibuike/wewantwaste_test)
+
+---
 
 ## Objective
 
-Redesign the skip selection page for improved user experience, responsive layout, and clean maintainable code using React.
+Redesign the Skip Selection page for a better user experience, modern visual appeal, and responsive layout using React and TypeScript.
+
+---
 
 ## Task Summary
 
-- Navigate to [https://wewantwaste.co.uk](https://wewantwaste.co.uk)
-- Enter postcode: `LE10 1SH`, select an address, then select *Garden Waste*
-- Target page: **Skip Selection Page**
-- Use this data source to populate skip options:  
+- Visit [https://wewantwaste.co.uk](https://wewantwaste.co.uk)
+- Enter the postcode: `LE10 1SH`, select any address, and choose *Garden Waste*
+- The Skip Selection page is the one to be redesigned
+- Use the data from:  
   [https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft](https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft)
 
 ---
@@ -27,26 +31,31 @@ Redesign the skip selection page for improved user experience, responsive layout
 ## My Approach
 
 ### 1. **Project Setup**
-- Bootstrapped a new React project using **Vite** for faster build and dev experience
-- Used **Tailwind CSS** for rapid and responsive UI development
-- Folder structure follows separation of concerns (components, assets, hooks, utils)
+- Initialized a new **React + TypeScript** project using **Vite** for fast development
+- Used standard **CSS** for styling and layout
+- Organized codebase into folders:
+  - `components/` – reusable UI elements
+  - `services/` – API logic
+  - `styles/` – custom CSS styles
 
-### 2. **Fetching API Data**
-- Used `fetch` in `useEffect()` to retrieve skip data from the given endpoint
-- Stored the data in local state and mapped it dynamically on the page
+### 2. **API Integration**
+- Fetched skip data using the native `fetch` API inside a `useEffect` hook
+- Handled loading and error states
+- Stored skip data in local state and displayed it dynamically on the page
 
-### 3. **UI/UX Improvements**
-- Redesigned layout for cleaner visual hierarchy and spacing
-- Responsive grid system for skip items using Tailwind
-- Added modern card-style presentation for skip options
-- Used intuitive iconography and clear call-to-action buttons
-- Focused on mobile-first responsiveness
+### 3. **UI/UX Enhancements**
+- Redesigned the layout with clean spacing and consistent alignment
+- Used **CSS Flexbox and Grid** for a responsive design
+- Implemented **card-style layout** for skip options
+- **Incorporated icons** to improve visual clarity and make the interface more intuitive and user-friendly
+- Ensured mobile and desktop responsiveness
+- Clear call-to-action buttons and interactive hover effects
 
-### 4. **Code Quality**
-- Split UI into reusable components (`SkipCard`, `SkipList`, etc.)
-- Organized styling using Tailwind utility classes
-- Added fallback UI for loading and error states
-- Applied accessibility best practices (alt text, aria labels)
+### 4. **TypeScript & Code Quality**
+- Used TypeScript throughout the project to ensure type safety
+- Defined proper interfaces for API responses and component props
+- Separated logic and UI into components for better maintainability
+- Followed best practices for code readability and reusability
 
 ---
 
@@ -54,8 +63,8 @@ Redesign the skip selection page for improved user experience, responsive layout
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/remwaste-challenge.git
-   cd remwaste-challenge
+   git clone https://github.com/Obiorachibuike/wewantwaste_test.git
+   cd wewantwaste_test
 
 2. Install dependencies
 
@@ -67,7 +76,7 @@ npm install
 npm run dev
 
 
-4. Open in your browser: http://localhost:5173
+4. Open in browser: http://localhost:5173
 
 
 
@@ -78,11 +87,11 @@ Tech Stack
 
 React 18
 
-Vite – Fast build tool
+TypeScript
 
-Tailwind CSS – Utility-first CSS framework
+Vite
 
-JavaScript (ES6+)
+CSS (vanilla)
 
 
 
@@ -92,33 +101,37 @@ Screenshots
 
 Desktop View
 
-Include screenshot of redesigned page on desktop
+(Insert screenshot here)
 
 Mobile View
 
-Include screenshot of mobile version
+(Insert screenshot here)
 
 
 ---
 
 Final Notes
 
-This challenge was a great opportunity to demonstrate my ability to:
+This project helped me demonstrate:
 
-Work with real-world APIs
+Integration with live APIs
 
-Write clean and reusable components
+Building responsive, clean UI using CSS and React
 
-Deliver responsive, user-friendly UI in React
+Designing user-friendly interfaces with visual cues like icons
+
+Writing modular, type-safe, and maintainable front-end code
 
 
-Thank you to the REMWaste team for the opportunity!
+Thank you to the REMWaste team for this opportunity!
 
 
 ---
 
 Submitted by:
 Chibuike Obiora
-https://www.linkedin.com/in/obiorachibuike
+LinkedIn – obiorachibuike
+
+
 ---
 
