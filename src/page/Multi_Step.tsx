@@ -10,9 +10,11 @@ const MultiStepForm: React.FC = () => {
 
 
 
-  const nextPage = (currentStep) => {
-    setCurrentStep(currentStep)
-  }
+  
+
+const nextPage = (currentStep: number) => {
+   setCurrentStep(currentStep)
+}
 
 
   
