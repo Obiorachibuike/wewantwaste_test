@@ -5,7 +5,7 @@ import { FaTrashAlt, } from 'react-icons/fa';
 interface Step {
   title: string;
   step: number;
-  icon: JSX.Element;
+  icon: React.ReactNode; // More flexible than JSX.Element
 }
 
 interface Props {
