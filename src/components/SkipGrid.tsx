@@ -10,9 +10,10 @@ interface SkipGridProps {
   nextPage: (currentStep: number) => void;
 }
 
-export interface SkipData {
+interface SkipData {
   id: number;
   size: number;
+  title?: string; // <-- make optional
   price_before_vat: number;
   hire_period_days: number;
   forbidden: boolean;
