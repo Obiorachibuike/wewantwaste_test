@@ -12,7 +12,6 @@ interface SkipGridProps {
 
 export interface SkipData {
   id: number;
-  title: string;
   size: number;
   price_before_vat: number;
   hire_period_days: number;
