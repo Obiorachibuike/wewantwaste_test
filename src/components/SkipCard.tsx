@@ -59,7 +59,7 @@ const SkipCard: React.FC<SkipCardProps> = ({
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-alert-triangle w-4 h-4 text-yellow-500 shrink-0"
+                className="lucide lucide-alert-triangle w-4 h-4 text-yellow-500 shrink-0"
               >
                 <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
                 <path d="M12 9v4"></path>
