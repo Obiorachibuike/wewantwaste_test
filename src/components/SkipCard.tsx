@@ -8,7 +8,7 @@ interface SkipCardProps {
     title?: string;
     price_before_vat: number;
     hire_period_days: number;
-    forbidden: boolean;
+    forbidden?: boolean;
     image?: string;
   };
   selectedSkipId: number | null;
