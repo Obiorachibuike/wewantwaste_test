@@ -39,31 +39,20 @@ Redesign the Skip Selection page with a focus on:
 - Styled components using vanilla CSS for flexibility and simplicity  
 - Organized project folders:  
   - `components/` – reusable UI elements  
-  - `services/` – API handling logic  
   - `styles/` – CSS stylesheets  
 
 ### 2. API Integration 🔗📡
 
-- Used native fetch API within React’s `useEffect` hook to retrieve skip data  
+- Used native Axios package within React’s `useEffect` hook to retrieve skip data  
 - Implemented loading and error states to enhance reliability  
 - Managed data statefully for dynamic and smooth rendering  
 
 ### 3. UI/UX Enhancements 🎨🖌️
 
 - Redesigned layout using CSS Flexbox and Grid for clean, responsive design  
-- Developed card-style skip options for intuitive selection  
+- Developed card-style skip page for intuitive selection  
 - Added interactive hover effects for better user engagement  
 - Used clear, prominent Call to Action (CTA) buttons  
-- Incorporated icons for enhanced clarity and visual guidance, including:  
-  - 📍 Location/Address pin  
-  - 🗑️ Waste type indicator  
-  - 🚚 Skip/truck symbol  
-  - 📅 Date/calendar for scheduling  
-  - 💳 Payment method icon  
-  - 🔄 Refresh/update button  
-  - ⚙️ Settings/options  
-  - 🛡️ Safety and permits  
-  - 📦 Skip size/type  
 
 ### 4. TypeScript & Code Quality ✅📜
 
@@ -100,7 +89,7 @@ TypeScript
 
 Vite
 
-CSS (vanilla)
+CSS3 (vanilla)
 
 
 
