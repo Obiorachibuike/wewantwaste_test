@@ -5,6 +5,11 @@ import data from "../data/data.js"
 import '../styles/SkipGrid.css'; // Your custom CSS file
 
 
+
+interface SkipGridProps {
+  nextPage: (currentStep: number) => void;
+}
+
 interface SkipData {
   size: number;
   title: string;
@@ -14,7 +19,7 @@ interface SkipData {
   roadAllowed: boolean;
 }
 
-const SkipGrid: React.FC = ({nextPage}) => {
+const SkipGrid: React.FC<SkipGridProps> = ({ nextPage }) => {
   const [skips, setSkips] = useState<SkipData[]>([]);
    const [selectedSkip, setSelectedSkip] = useState<{size: string; price_before_vat: number,hire_period_days:number} | null>(null);
  const [selectedSkipId, setSelectedSkipId] = useState<number | null>(null);
