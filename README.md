@@ -119,7 +119,6 @@ Thank you to the REMWaste team for the opportunity!
 
 Submitted by:
 Chibuike Obiora
-[LinkedIn Profile or Portfolio link if applicable]
-
+https://www.linkedin.com/in/obiorachibuike
 ---
 
