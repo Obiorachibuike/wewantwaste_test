@@ -1,89 +1,126 @@
----
-
-# REMWaste Frontend Challenge – Skip Selection Page Redesign
-
-## Overview
-
-This project is a submission for the REMWaste front-end React coding challenge. The goal was to **redesign the "Skip Selection" page** of the REMWaste platform while keeping its core functionality intact, improving the UI/UX, and making it responsive across devices.
-
-**Live Preview:** [wewantwaste-test.vercel.app](https://wewantwaste-test.vercel.app)  
-**StackBlitz Sandbox:** [Open in StackBlitz](https://stackblitz.com/~/github.com/Obiorachibuike/wewantwaste_test?file=src/App.tsx)  
-**GitHub Repo:** [https://github.com/Obiorachibuike/wewantwaste_test](https://github.com/Obiorachibuike/wewantwaste_test)
 
 ---
 
-## Objective
+REMWaste Frontend Challenge – Skip Selection Page Redesign
 
-Redesign the Skip Selection page for a better user experience, modern visual appeal, and responsive layout using React and TypeScript.
+Overview 🖥️📱
 
----
+This project is a submission for the REMWaste front-end React coding challenge. The goal was to redesign the "Skip Selection" page of the REMWaste platform, improving UI/UX and ensuring responsiveness across devices.
 
-## Task Summary
+Live Preview: wewantwaste-test.vercel.app
 
-- Visit [https://wewantwaste.co.uk](https://wewantwaste.co.uk)
-- Enter the postcode: `LE10 1SH`, select any address, and choose *Garden Waste*
-- The Skip Selection page is the one to be redesigned
-- Use the data from:  
-  [https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft](https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft)
+StackBlitz Sandbox: Open in StackBlitz
 
----
+GitHub Repo: https://github.com/Obiorachibuike/wewantwaste_test
 
-## My Approach
 
-### 1. **Project Setup**
-- Initialized a new **React + TypeScript** project using **Vite** for fast development
-- Used standard **CSS** for styling and layout
-- Organized codebase into folders:
-  - `components/` – reusable UI elements
-  - `services/` – API logic
-  - `styles/` – custom CSS styles
-
-### 2. **API Integration**
-- Fetched skip data using the native `fetch` API inside a `useEffect` hook
-- Handled loading and error states
-- Stored skip data in local state and displayed it dynamically on the page
-
-### 3. **UI/UX Enhancements**
-- Redesigned the layout with clean spacing and consistent alignment
-- Used **CSS Flexbox and Grid** for a responsive design
-- Implemented **card-style layout** for skip options
-- **Incorporated icons** to improve visual clarity and make the interface more intuitive and user-friendly
-- Ensured mobile and desktop responsiveness
-- Clear call-to-action buttons and interactive hover effects
-
-### 4. **TypeScript & Code Quality**
-- Used TypeScript throughout the project to ensure type safety
-- Defined proper interfaces for API responses and component props
-- Separated logic and UI into components for better maintainability
-- Followed best practices for code readability and reusability
 
 ---
 
-## How to Run Locally
+Objective 🎯✨
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Obiorachibuike/wewantwaste_test.git
-   cd wewantwaste_test
+Redesign the Skip Selection page to achieve:
 
-2. Install dependencies
+Improved user experience
 
+Modern, clean visual design
+
+Fully responsive layout using React + TypeScript
+
+
+
+---
+
+Task Summary 📋🔍
+
+1. Visit: https://wewantwaste.co.uk
+
+
+2. Enter postcode: LE10 1SH, select any address, choose Garden Waste
+
+
+3. The page loaded next is the Skip Selection page to redesign
+
+
+4. Use data from:
+API – Skips by Location
+
+
+
+
+---
+
+My Approach 🧠💡
+
+1. Project Setup ⚙️🛠️
+
+Initialized React + TypeScript project with Vite for fast build
+
+Styled with vanilla CSS for flexibility
+
+Organized structure:
+
+components/ – reusable UI parts
+
+services/ – API integration logic
+
+styles/ – CSS files
+
+
+
+2. API Integration 🔗📡
+
+Used fetch inside useEffect to load skip data
+
+Managed loading and error states gracefully
+
+Stored data in React state for dynamic rendering
+
+
+3. UI/UX Enhancements 🎨🖌️
+
+Redesigned layout using Flexbox and Grid for responsiveness
+
+Created card-style UI for skip page to enhance clarity
+
+Added hover effects for better interactivity
+
+Clear Call to Action (CTA) buttons for easy navigation
+
+Fully mobile and desktop responsive design
+
+
+4. TypeScript & Code Quality ✅📜
+
+Used strict TypeScript interfaces for API data and props
+
+Modularized components for clean, maintainable code
+
+Followed React best practices for readability and reusability
+
+
+
+---
+
+How to Run Locally 🚀💻
+
+# 1. Clone the repo
+git clone https://github.com/Obiorachibuike/wewantwaste_test.git
+cd wewantwaste_test
+
+# 2. Install dependencies
 npm install
 
-
-3. Start the development server
-
+# 3. Run the dev server
 npm run dev
 
-
-4. Open in browser: http://localhost:5173
-
-
+# 4. Open in your browser
+http://localhost:5173
 
 
 ---
 
-Tech Stack
+Tech Stack 🧰⚛️
 
 React 18
 
@@ -97,39 +134,26 @@ CSS (vanilla)
 
 ---
 
-Screenshots
+Final Notes ✍️🎉
 
-Desktop View
+This project allowed me to showcase:
 
-(Insert screenshot here)
+Integration with live APIs 📡
 
-Mobile View
+Building responsive, clean UI with React & CSS 📱🖥️
 
-(Insert screenshot here)
+Enhancing interfaces using icons and clear design 🎨
 
-
----
-
-Final Notes
-
-This project helped me demonstrate:
-
-Integration with live APIs
-
-Building responsive, clean UI using CSS and React
-
-Designing user-friendly interfaces with visual cues like icons
-
-Writing modular, type-safe, and maintainable front-end code
+Writing modular, type-safe front-end code ✅
 
 
-Thank you to the REMWaste team for this opportunity!
+Thanks to the REMWaste team for this fantastic opportunity!
 
 
 ---
 
 Submitted by:
 Chibuike Obiora
-LinkedIn – https://www.linkedin.com/in/obiorachibuike
+LinkedIn - https://www.linkedin.com/in/obiorachibuike
 ---
 
