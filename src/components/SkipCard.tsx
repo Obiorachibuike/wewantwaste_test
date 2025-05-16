@@ -5,7 +5,7 @@ interface SkipCardProps {
   content: {
     id: number;
     size: number;
-    title: string;
+    title?: string;
     price_before_vat: number;
     hire_period_days: number;
     forbidden: boolean;
