@@ -3,15 +3,18 @@
 
 REMWaste Frontend Challenge – Skip Selection Page Redesign
 
+
+---
+
 Overview 🖥️📱
 
-This project is a submission for the REMWaste front-end React coding challenge. The goal was to redesign the "Skip Selection" page of the REMWaste platform, improving UI/UX and ensuring responsiveness across devices.
+This project is a submission for the REMWaste front-end React coding challenge. The goal was to redesign the "Skip Selection" page of the REMWaste platform, improving UI/UX and ensuring full responsiveness across all devices.
 
 Live Preview: wewantwaste-test.vercel.app
 
 StackBlitz Sandbox: Open in StackBlitz
 
-GitHub Repo: https://github.com/Obiorachibuike/wewantwaste_test
+GitHub Repo: github.com/Obiorachibuike/wewantwaste_test
 
 
 
@@ -19,13 +22,13 @@ GitHub Repo: https://github.com/Obiorachibuike/wewantwaste_test
 
 Objective 🎯✨
 
-Redesign the Skip Selection page to achieve:
+Redesign the Skip Selection page with a focus on:
 
-Improved user experience
+Enhancing user experience (UX)
 
-Modern, clean visual design
+Applying a modern and clean visual design
 
-Fully responsive layout using React + TypeScript
+Ensuring a fully responsive layout using React and TypeScript
 
 
 
@@ -33,17 +36,17 @@ Fully responsive layout using React + TypeScript
 
 Task Summary 📋🔍
 
-1. Visit: https://wewantwaste.co.uk
+1. Visit: wewantwaste.co.uk
 
 
-2. Enter postcode: LE10 1SH, select any address, choose Garden Waste
+2. Enter postcode: LE10 1SH, select any address, then choose Garden Waste
 
 
-3. The page loaded next is the Skip Selection page to redesign
+3. The next page loaded is the Skip Selection page to redesign
 
 
-4. Use data from:
-API – Skips by Location
+4. Use data from the API endpoint:
+https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft
 
 
 
@@ -54,49 +57,68 @@ My Approach 🧠💡
 
 1. Project Setup ⚙️🛠️
 
-Initialized React + TypeScript project with Vite for fast build
+Initialized a React + TypeScript project with Vite for fast and efficient builds
 
-Styled with vanilla CSS for flexibility
+Styled components using vanilla CSS for flexibility and simplicity
 
-Organized structure:
+Organized project folders:
 
-components/ – reusable UI parts
+components/ – reusable UI elements
 
-services/ – API integration logic
+services/ – API handling logic
 
-styles/ – CSS files
+styles/ – CSS stylesheets
 
 
 
 2. API Integration 🔗📡
 
-Used fetch inside useEffect to load skip data
+Used native fetch API within React’s useEffect hook to retrieve skip data
 
-Managed loading and error states gracefully
+Implemented loading and error states to enhance reliability
 
-Stored data in React state for dynamic rendering
+Managed data statefully for dynamic and smooth rendering
 
 
 3. UI/UX Enhancements 🎨🖌️
 
-Redesigned layout using Flexbox and Grid for responsiveness
+Redesigned layout using CSS Flexbox and Grid for clean, responsive design
 
-Created card-style UI for skip page to enhance clarity
+Developed card-style skip options for intuitive selection
 
-Added hover effects for better interactivity
+Added interactive hover effects for better user engagement
 
-Clear Call to Action (CTA) buttons for easy navigation
+Used clear, prominent Call to Action (CTA) buttons
 
-Fully mobile and desktop responsive design
+Incorporated icons for enhanced clarity and visual guidance, including:
+
+📍 Location/Address pin
+
+🗑️ Waste type indicator
+
+🚚 Skip/truck symbol
+
+📅 Date/calendar for scheduling
+
+💳 Payment method icon
+
+🔄 Refresh/update button
+
+⚙️ Settings/options
+
+🛡️ Safety and permits
+
+📦 Skip size/type
+
 
 
 4. TypeScript & Code Quality ✅📜
 
-Used strict TypeScript interfaces for API data and props
+Defined strict TypeScript interfaces for API data and component props
 
-Modularized components for clean, maintainable code
+Structured modular, reusable components to ensure maintainability
 
-Followed React best practices for readability and reusability
+Followed React best practices for clean, readable code
 
 
 
@@ -104,17 +126,17 @@ Followed React best practices for readability and reusability
 
 How to Run Locally 🚀💻
 
-# 1. Clone the repo
+# Clone the repository
 git clone https://github.com/Obiorachibuike/wewantwaste_test.git
 cd wewantwaste_test
 
-# 2. Install dependencies
+# Install dependencies
 npm install
 
-# 3. Run the dev server
+# Start development server
 npm run dev
 
-# 4. Open in your browser
+# Open the app in your browser
 http://localhost:5173
 
 
@@ -136,24 +158,26 @@ CSS (vanilla)
 
 Final Notes ✍️🎉
 
-This project allowed me to showcase:
+This project allowed me to demonstrate:
 
 Integration with live APIs 📡
 
-Building responsive, clean UI with React & CSS 📱🖥️
+Building responsive, clean UIs with React and CSS 📱🖥️
 
-Enhancing interfaces using icons and clear design 🎨
+Improving user interfaces with meaningful icons and clear design principles 🎨
 
-Writing modular, type-safe front-end code ✅
+Writing modular, type-safe, and maintainable front-end code ✅
 
 
-Thanks to the REMWaste team for this fantastic opportunity!
+I sincerely thank the REMWaste team for this great opportunity!
 
 
 ---
 
 Submitted by:
 Chibuike Obiora
-LinkedIn - https://www.linkedin.com/in/obiorachibuike
+LinkedIn
+
+
 ---
 
