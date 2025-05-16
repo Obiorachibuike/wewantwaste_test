@@ -8,7 +8,7 @@ interface SkipGridProps {
   nextPage: (currentStep: number) => void;
 }
 
-interface SkipData {
+export interface SkipData {
   id: number;
   size: number;
   title?: string;
@@ -18,11 +18,17 @@ interface SkipData {
   image?: string;
 }
 
+interface SelectedSkipData {
+  size: string;
+  price_before_vat: number;
+  hire_period_days: number;
+}
+
 const SkipGrid: React.FC<SkipGridProps> = ({ nextPage }) => {
   const [skips, setSkips] = useState<SkipData[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedSkip, setSelectedSkip] = useState<{ size: string; price_before_vat: number; hire_period_days: number } | null>(null);
+  const [selectedSkip, setSelectedSkip] = useState<SelectedSkipData | null>(null);
   const [selectedSkipId, setSelectedSkipId] = useState<number | null>(null);
 
   useEffect(() => {
