@@ -1,131 +1,81 @@
 
----
+# REMWaste Frontend Challenge – Skip Selection Page Redesign
 
-REMWaste Frontend Challenge – Skip Selection Page Redesign
-
-
----
-
-Overview 🖥️📱
+## Overview 🖥️📱
 
 This project is a submission for the REMWaste front-end React coding challenge. The goal was to redesign the "Skip Selection" page of the REMWaste platform, improving UI/UX and ensuring full responsiveness across all devices.
 
-Live Preview: wewantwaste-test.vercel.app
-
-StackBlitz Sandbox: Open in StackBlitz
-
-GitHub Repo: github.com/Obiorachibuike/wewantwaste_test
-
-
+**Live Preview:** [wewantwaste-test.vercel.app](https://wewantwaste-test.vercel.app)  
+**StackBlitz Sandbox:** [Open in StackBlitz](https://stackblitz.com/~/github.com/Obiorachibuike/wewantwaste_test?file=src/App.tsx)  
+**GitHub Repo:** [github.com/Obiorachibuike/wewantwaste_test](https://github.com/Obiorachibuike/wewantwaste_test)
 
 ---
 
-Objective 🎯✨
+## Objective 🎯✨
 
 Redesign the Skip Selection page with a focus on:
 
-Enhancing user experience (UX)
-
-Applying a modern and clean visual design
-
-Ensuring a fully responsive layout using React and TypeScript
-
-
+- Enhancing user experience (UX)  
+- Applying a modern and clean visual design  
+- Ensuring a fully responsive layout using React and TypeScript  
 
 ---
 
-Task Summary 📋🔍
+## Task Summary 📋🔍
 
-1. Visit: wewantwaste.co.uk
-
-
-2. Enter postcode: LE10 1SH, select any address, then choose Garden Waste
-
-
-3. The next page loaded is the Skip Selection page to redesign
-
-
-4. Use data from the API endpoint:
-https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft
-
-
-
+1. Visit: [wewantwaste.co.uk](https://wewantwaste.co.uk)  
+2. Enter postcode: `LE10 1SH`, select any address, then choose Garden Waste  
+3. The next page loaded is the Skip Selection page to redesign  
+4. Use data from the API endpoint:  
+   [https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft](https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft)  
 
 ---
 
-My Approach 🧠💡
+## My Approach 🧠💡
 
-1. Project Setup ⚙️🛠️
+### 1. Project Setup ⚙️🛠️
 
-Initialized a React + TypeScript project with Vite for fast and efficient builds
+- Initialized a React + TypeScript project with Vite for fast and efficient builds  
+- Styled components using vanilla CSS for flexibility and simplicity  
+- Organized project folders:  
+  - `components/` – reusable UI elements  
+  - `services/` – API handling logic  
+  - `styles/` – CSS stylesheets  
 
-Styled components using vanilla CSS for flexibility and simplicity
+### 2. API Integration 🔗📡
 
-Organized project folders:
+- Used native fetch API within React’s `useEffect` hook to retrieve skip data  
+- Implemented loading and error states to enhance reliability  
+- Managed data statefully for dynamic and smooth rendering  
 
-components/ – reusable UI elements
+### 3. UI/UX Enhancements 🎨🖌️
 
-services/ – API handling logic
+- Redesigned layout using CSS Flexbox and Grid for clean, responsive design  
+- Developed card-style skip options for intuitive selection  
+- Added interactive hover effects for better user engagement  
+- Used clear, prominent Call to Action (CTA) buttons  
+- Incorporated icons for enhanced clarity and visual guidance, including:  
+  - 📍 Location/Address pin  
+  - 🗑️ Waste type indicator  
+  - 🚚 Skip/truck symbol  
+  - 📅 Date/calendar for scheduling  
+  - 💳 Payment method icon  
+  - 🔄 Refresh/update button  
+  - ⚙️ Settings/options  
+  - 🛡️ Safety and permits  
+  - 📦 Skip size/type  
 
-styles/ – CSS stylesheets
+### 4. TypeScript & Code Quality ✅📜
 
-
-
-2. API Integration 🔗📡
-
-Used native fetch API within React’s useEffect hook to retrieve skip data
-
-Implemented loading and error states to enhance reliability
-
-Managed data statefully for dynamic and smooth rendering
-
-
-3. UI/UX Enhancements 🎨🖌️
-
-Redesigned layout using CSS Flexbox and Grid for clean, responsive design
-
-Developed card-style skip options for intuitive selection
-
-Added interactive hover effects for better user engagement
-
-Used clear, prominent Call to Action (CTA) buttons
-
-Incorporated icons for enhanced clarity and visual guidance, including:
-
-📍 Location/Address pin
-
-🗑️ Waste type indicator
-
-🚚 Skip/truck symbol
-
-📅 Date/calendar for scheduling
-
-💳 Payment method icon
-
-🔄 Refresh/update button
-
-⚙️ Settings/options
-
-🛡️ Safety and permits
-
-📦 Skip size/type
-
-
-
-4. TypeScript & Code Quality ✅📜
-
-Defined strict TypeScript interfaces for API data and component props
-
-Structured modular, reusable components to ensure maintainability
-
-Followed React best practices for clean, readable code
-
-
+- Defined strict TypeScript interfaces for API data and component props  
+- Structured modular, reusable components to ensure maintainability  
+- Followed React best practices for clean, readable code  
 
 ---
 
-How to Run Locally 🚀💻
+## How to Run Locally 🚀💻
 
+```bash
 # Clone the repository
 git clone https://github.com/Obiorachibuike/wewantwaste_test.git
 cd wewantwaste_test
@@ -176,8 +126,7 @@ I sincerely thank the REMWaste team for this great opportunity!
 
 Submitted by:
 Chibuike Obiora
-LinkedIn
-
-
+LinkedIn - https://www.linkedin.com/in/obiorachibuike
 ---
+
 
