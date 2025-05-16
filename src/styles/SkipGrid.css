@@ -9,6 +9,16 @@
   max-width: 80rem;
   margin: 0 auto;
 }
+.loading-message,
+.error-message {
+  text-align: center;
+  margin-top: 2rem;
+  color: #555;
+}
+
+.error-message {
+  color: red;
+}
 
 .skip-grid {
   display: grid;
