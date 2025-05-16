@@ -10,13 +10,14 @@ interface SkipGridProps {
   nextPage: (currentStep: number) => void;
 }
 
-interface SkipData {
-  size: number;
+export interface SkipData {
+  id: number;
   title: string;
-  image: string;
-  price: number;
-  hirePeriod: string;
-  roadAllowed: boolean;
+  size: number;
+  price_before_vat: number;
+  hire_period_days: number;
+  forbidden: boolean;
+  image?: string;
 }
 
 const SkipGrid: React.FC<SkipGridProps> = ({ nextPage }) => {
