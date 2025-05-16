@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SkipCard from './SkipCard';
 import axios from "axios"
-import data from "../data/data.js"
+import data from "../data/data.ts"
 import '../styles/SkipGrid.css'; // Your custom CSS file
 
 
