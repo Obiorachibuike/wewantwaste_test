@@ -76,7 +76,7 @@ const handleBack = () => {
     <p className="skip-grid-subheading">Select the skip size that best suits your needs</p>
     <div className="skip-card-cont">
       {/* {console.log(skips)} */}
-      {skips.map((skipItem, idx) => (
+      {skips.map((skipItem) => (
          <SkipCard
           key={skipItem.id}
           content={skipItem}
