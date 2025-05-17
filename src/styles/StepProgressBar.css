@@ -1,94 +1,76 @@
 .step-container {
-display: flex;
-justify-content: space-between;
-overflow-x: auto;
-padding: 0 12px;
-width: 100%;
-max-width: 960px;
-margin: 40px auto;
-gap: 12px;
-box-sizing: border-box;
-}
-
-.step-divider {
-height: 2px;
-background-color: #4b5563;
-flex: 1;
-margin: 0 6px;
-align-self: center;
-min-width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 16px;
+  width: 95%;
+  margin: 30px auto 50px;
+  gap: 16px;
 }
 
 .step-progress-bar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-overflow-x: auto;
-padding: 0 1rem;
-gap: 1rem;
-scroll-padding-left: 1rem;
-scroll-snap-type: x mandatory;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  padding: 0 0.5rem;
+  gap: 1rem;
 }
 
 .step-item {
-flex: 0 0 auto;
-min-width: 140px;
-max-width: 180px;
-padding: 12px 16px;
-font-size: 0.875rem;
-color: #d1d5db;
-background-color: #1e293b;
-border-bottom: 3px solid #334155;
-white-space: nowrap;
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 0.75rem;
-cursor: pointer;
-transition: all 0.3s ease;
-scroll-snap-align: start;
-box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  flex: 0 0 auto;
+  min-width: 140px;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 0.875rem;
+  color: #6b7280; /* Gray-500 */
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .step-item:hover {
-background-color: #334155;
-transform: translateY(-2px);
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
 }
 
 .step-item.active {
-color: #38bdf8; /* Sky-400 /
-border-bottom-color: #0ea5e9; / Sky-500 */
-font-weight: 600;
-background-color: #0f172a;
+  color: #1d4ed8; /* Blue-700 */
+  border-color: #1d4ed8;
+  background-color: #eef2ff;
+  font-weight: 600;
 }
 
 .step-item.completed {
-color: #4ade80; /* Green-400 /
-border-bottom-color: #22c55e; / Green-500 */
-background-color: #052e16;
-font-weight: 600;
+  color: #16a34a; /* Green-600 */
+  border-color: #16a34a;
+  background-color: #ecfdf5;
+  font-weight: 600;
 }
 
 .step-icon {
-display: flex;
-font-size: 1.4rem;
-margin-right: 8px;
-color: inherit;
+  display: flex;
+  font-size: 1.4rem;
+  margin-right: 8px;
+  color: inherit;
 }
 
 .step-title {
-font-size: 0.85rem;
-color: inherit;
+  font-size: 0.85rem;
+  white-space: nowrap;
 }
 
-@media (max-width: 640px) {
-.step-item {
-font-size: 0.75rem;
-padding: 10px;
-min-width: 100px;
+@media (min-width: 640px) {
+  .step-item {
+    font-size: 0.95rem;
+  }
 }
-
-.step-title {
-display: none; /* Hide titles on very small screens */
-}
-} 
