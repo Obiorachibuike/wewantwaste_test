@@ -229,15 +229,4 @@ font-size: 0.85rem;
 color: inherit;
 }
 
-@media (max-width: 640px) {
-.step-item {
-font-size: 0.75rem;
-padding: 10px;
-min-width: 100px;
-}
-
-.step-title {
-display: none; /* Hide titles on very small screens */
-}
-}  I want you to change  the ui to a more user friendly ui
 
