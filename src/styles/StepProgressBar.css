@@ -1,10 +1,3 @@
-body {
-background-color: #0f172a; /* Dark navy /
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color: #e5e7eb; / Light text */
-margin: 0;
-padding: 0;
-}
 
 .step-container {
 display: flex;
@@ -96,5 +89,5 @@ min-width: 100px;
 .step-title {
 display: none; /* Hide titles on very small screens */
 }
-}  I want you to change  the ui to a more user friendly ui
+}  
 
