@@ -101,9 +101,11 @@
   cursor: pointer;
 }
 
+/*
 .skip-card-button:hover {
   background-color: #1d4ed8;
 }
+*/
 
 .skip-card-button.selected {
   background-color: #2563eb;
