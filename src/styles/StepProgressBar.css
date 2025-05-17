@@ -17,15 +17,19 @@ body {
 /* Progress bar wrapper */
 .step-progress-bar {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 24px; /* Space between each step */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 1rem 0;
   position: relative;
+  flex-wrap: nowrap;
 }
 
-/* Connector line between steps */
+/* Optional: remove if no longer using divider */
+
 .step-divider {
   flex: 1;
   height: 4px;
@@ -104,4 +108,13 @@ body {
   .step-title {
     font-size: 0.75rem;
   }
+}
+
+/* Optional: improve scrollbar visibility */
+.step-progress-bar::-webkit-scrollbar {
+  height: 6px;
+}
+.step-progress-bar::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
 }
