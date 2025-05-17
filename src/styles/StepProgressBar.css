@@ -1,120 +1,102 @@
 body {
-  background-color: #0f172a;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #e5e7eb;
-  margin: 0;
-  padding: 0;
+background-color: #0f172a;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #e5e7eb;
+margin: 0;
+padding: 0;
 }
 
 /* Container for all steps */
 .step-container {
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 0 16px;
-  overflow-x: auto;
+max-width: 960px;
+margin: 40px auto;
+padding: 0 16px;
+overflow-x: auto;
 }
 
 /* Progress bar wrapper */
 .step-progress-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
-  gap: 24px; /* Space between each step */
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 1rem 0;
-  position: relative;
-  flex-wrap: nowrap;
+display: flex;
+align-items: center;
+position: relative;
+gap: 12px;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+padding: 1rem 0;
 }
 
-/* Optional: remove if no longer using divider */
-
+/* Connector line between steps */
 .step-divider {
-  flex: 1;
-  height: 4px;
-  background: linear-gradient(to right, #334155, #1e293b);
-  min-width: 20px;
-  border-radius: 2px;
+flex: 1;
+height: 4px;
+background-color: #334155;
+min-width: 20px;
 }
 
 /* Individual step */
 .step-item {
-  flex-shrink: 0;
-  min-width: 160px;
-  background: linear-gradient(145deg, #1e293b, #0f172a);
-  color: #d1d5db;
-  border-radius: 16px;
-  padding: 18px 22px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  scroll-snap-align: start;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-  border: 1px solid transparent;
+flex-shrink: 0;
+min-width: 160px;
+background-color: #1e293b;
+color: #d1d5db;
+border-radius: 12px;
+padding: 16px 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+scroll-snap-align: start;
+cursor: pointer;
+transition: background 0.3s ease, transform 0.3s ease;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .step-item:hover {
-  background: linear-gradient(145deg, #334155, #1e293b);
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+background-color: #334155;
+transform: scale(1.02);
 }
 
 /* Active step */
 .step-item.active {
-  background: linear-gradient(145deg, #0f172a, #1e40af);
-  color: #93c5fd;
-  border: 2px solid #3b82f6;
-  box-shadow: 0 0 10px #3b82f6;
+background-color: #0f172a;
+color: #60a5fa;
+border: 2px solid #3b82f6;
 }
 
 /* Completed step */
 .step-item.completed {
-  background: linear-gradient(145deg, #064e3b, #052e16);
-  color: #86efac;
-  border: 2px solid #22c55e;
-  box-shadow: 0 0 10px #22c55e;
+background-color: #052e16;
+color: #4ade80;
+border: 2px solid #22c55e;
 }
 
 /* Icon above the title */
 .step-icon {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: inherit;
+font-size: 1.8rem;
+margin-bottom: 8px;
+color: inherit;
 }
 
 /* Step label/title */
 .step-title {
-  font-size: 0.9rem;
-  text-align: center;
-  font-weight: 600;
-  color: inherit;
+font-size: 0.875rem;
+text-align: center;
+color: inherit;
+font-weight: 500;
 }
 
 @media (max-width: 640px) {
-  .step-item {
-    min-width: 120px;
-    padding: 14px;
-    border-radius: 12px;
-  }
-
-  .step-icon {
-    font-size: 1.5rem;
-    margin-bottom: 6px;
-  }
-
-  .step-title {
-    font-size: 0.75rem;
-  }
+.step-item {
+min-width: 120px;
+padding: 12px;
 }
 
-/* Optional: improve scrollbar visibility */
-.step-progress-bar::-webkit-scrollbar {
-  height: 6px;
+.step-icon {
+font-size: 1.4rem;
+margin-bottom: 4px;
 }
-.step-progress-bar::-webkit-scrollbar-thumb {
-  background: #475569;
-  border-radius: 4px;
+
+.step-title {
+font-size: 0.75rem;
 }
+} I need a more better ui
+
