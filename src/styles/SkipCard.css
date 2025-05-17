@@ -114,4 +114,5 @@
 
 .skip-card-button.selected {
   background-color: #2563eb;
+  boder: none;
 }
