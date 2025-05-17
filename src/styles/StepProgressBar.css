@@ -1,4 +1,4 @@
-9.step-container {
+.step-container {
 display: flex;
 justify-content: space-between;
 overflow-x: auto;
@@ -89,6 +89,6 @@ min-width: 100px;
 }
 
 .step-title {
-display: flex; /* Hide titles on very small screens */
+display: block; /* Hide titles on very small screens */
 }
 }
