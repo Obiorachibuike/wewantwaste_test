@@ -137,15 +137,3 @@ border-bottom-color: #22c55e; / Green-500 */
 background-color: #052e16;
 font-weight: 600;
 }
-
-.step-icon {
-display: flex;
-font-size: 1.4rem;
-margin-right: 8px;
-color: inherit;
-}
-
-.step-title {
-font-size: 0.85rem;
-color: inherit;
-}
