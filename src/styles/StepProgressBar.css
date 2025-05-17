@@ -1,14 +1,4 @@
-.step-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 0 16px;
-  width: 95%;
-  margin: 30px auto 50px;
-  gap: 16px;
-}
+
 
 .step-progress-bar {
   display: flex;
@@ -75,13 +65,7 @@
   }
 }
 
-body {
-background-color: #0f172a; /* Dark navy /
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color: #e5e7eb; / Light text */
-margin: 0;
-padding: 0;
-}
+
 
 .step-container {
 display: flex;
