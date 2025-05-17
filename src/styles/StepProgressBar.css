@@ -6,11 +6,12 @@
   width: 90%;
   margin: 25px auto 40px;
   gap: 10px;
+  box-sizing: border-box;
 }
 
 .step-divider {
   height: 2px;
-  background-color: rgb(43, 42, 42);
+  background-color: #4b5563; /* Gray-600 for dark mode */
   flex: 1;
   margin: 0 5px;
   align-self: center;
@@ -33,8 +34,9 @@
   text-align: center;
   padding: 10px;
   font-size: 0.75rem;
-  color: #9ca3af;
-  border-bottom: 3px solid #ccc;
+  color: #d1d5db; /* Light gray text */
+  background-color: #1f2937; /* Dark gray background */
+  border-bottom: 3px solid #374151; /* Subtle border for dark bg */
   white-space: nowrap;
   display: flex;
   flex-direction: row;
@@ -43,27 +45,31 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .step-item:hover {
-  opacity: 0.85;
+  background-color: #374151; /* Lighter dark background */
+  opacity: 0.95;
 }
 
 .step-item.active,
 .step-item.completed {
-  color: #0f0ab9;
-  border-bottom-color: #0f0ab9;
+  color: #60a5fa; /* Blue-400 */
+  border-bottom-color: #3b82f6; /* Blue-500 */
+  font-weight: 600;
 }
 
 .step-icon {
   display: flex;
   font-size: 1.5rem;
   margin-right: 10px;
+  color: inherit;
 }
 
 .step-title {
   font-size: 0.85rem;
+  color: inherit;
 }
 
 @media (min-width: 640px) {
