@@ -1,100 +1,104 @@
 .skip-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  background-color: #18181b;
   color: white;
-  background-color: #18181b; /* Tailwind's bg-zinc-900 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  padding: 20px;
-  width: 300px;
   border-radius: 20px;
-  margin: 0 20px 50px;
-  box-shadow: 2px 2px 13px 4px gray;
+  width: 320px;
+  margin: 0 16px 40px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .skip-card.selected {
   border: 2px solid #2563eb;
 }
 
-.skip-card-content {
-  padding: 1rem 1rem 1rem 0;
-  flex-grow: 1;
-  text-align: start;
-}
-
 .skip-card-image-container {
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .skip-card-image {
   width: 100%;
-  height: 15rem;
+  height: 200px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .skip-card-badge {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 10px;
+  right: 10px;
   background-color: #0f0ab9;
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.25rem 0.5rem;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
   border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .skip-card-title {
-  font-size: 1.125rem;
-  font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .skip-card-hire-period {
   font-size: 0.875rem;
   color: #9ca3af;
-}
-
-.skip-card-warning {
-  margin-top: 0.5rem;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: #facc15;
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  background: black;
-  padding: 10px;
-  border-radius: 10px;
-  width: 70%;
-  position: absolute;
-  top: 170px;
-  left: 12px;
-}
-
-.skip-card-warning-icon {
-  font-size: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .skip-card-price {
-  margin-top: 0.5rem;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #0f0ab9;
 }
 
+.skip-card-warning {
+  position: absolute;
+  top: 140px;
+  left: 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #facc15;
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: auto;
+  max-width: 80%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.skip-card-warning-icon {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 .skip-card-footer {
-  padding: 0;
+  margin-top: 1rem;
 }
 
 .skip-card-button {
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
   background: #272728;
   color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .skip-card-button:hover {
@@ -102,9 +106,5 @@
 }
 
 .skip-card-button.selected {
-  background: #2563eb;
+  background-color: #2563eb;
 }
-
-
-
-
